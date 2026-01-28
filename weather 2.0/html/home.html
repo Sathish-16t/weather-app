@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
+  <body id="body">
+    <aside class="side-bar-container" id="side-bar-container">
+      <div class="side-bar">
+        <a class="link">home</a>
+        <a class="link">settings</a>
+        <a class="link">location</a>
+        <a class="link">search</a>
+        <a class="link">profile</a>
+      </div>
+    </aside>
+
+    <main class="main-container">
+      <nav class="nav-container">
+        <span class="material-symbols-outlined menu-icon" id="humburger"
+          >menu</span
+        >
+        <div class="search-container" id="search-container">
+        <input type="search" class="search" placeholder="search city" id="search" />
+        <button class="search-btn" id="search-btn"><span class="material-symbols-outlined" id="search-icon">search</span></button>
+        </div>
+        <select name="" id="" class="city-select">
+          <span class="material-symbols-outlined">location</span>
+          <option value="madurai" class="citys" id="location">Madurai</option>
+        </select>
+      </nav>
+
+      <div class="iron-container">
+        <section class="hero-container">
+          <h1>About Today</h1>
+          <span class="material-symbols-outlined" id="main-image" id="main-image">rainy</span>
+          <div class="des-container">
+            <p id="time">Wednesday,25 may</p>
+            <h1 class="temp" id="temp">19 <sup>o</sup></h1>
+          </div>
+        </section>
+
+        <section class="card-container">
+          <div class="sub-image-container">
+            <span class="material-symbols-outlined" id="sub-image">rainy</span>
+            <p id="visibility">6000</p>
+            <small>visibility</small>
+          </div>
+          <div class="sub-image-container">
+            <span class="material-symbols-outlined" id="sub-image">air</span>
+            <p id="wind">54.8</p>
+            <small>wind</small>
+          </div>
+          <div class="sub-image-container">
+            <span class="material-symbols-outlined" id="sub-image">cloud</span>
+            <p id="humidity">46.6</p>
+            <small>humidity</small>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="bottom-nav-container">
+      <span class="material-symbols-outlined" id="b-nav">home</span>
+      <span class="material-symbols-outlined"  id="b-nav" onclick="searchShow()">search</span>
+      <span class="material-symbols-outlined" id="b-nav">settings</span>
+      <span class="material-symbols-outlined profile-icon" id="b-nav"
+        >account_circle</span
+      >
+    </footer>
+
+    <script src="../js/home.js"></script>
+  </body>
+</html>
