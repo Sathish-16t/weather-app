@@ -39,10 +39,18 @@ catch(error){
 
 function  ui(weat){
     temp.textContent=weat.main.temp
-    humidity.textContent=weat.main.humidity
-    wind.textContent=weat.wind.speed
-    visibilty.textContent=weat.visibility
+    humidity.textContent=weat.main.humidity+' %'
+    wind.textContent=weat.wind.speed+' m/s'
+    visibilty.textContent=weat.visibility+' m'
     location2.textContent=weat.name
+    let date=new Date()
+let today=date.toLocaleDateString('en-GB',{
+    weekday:'long',
+    day:'numeric',
+    month:'long',
+    year:'numeric'
+})
+    time.textContent=today
     if(weat.weather[0].icon=='03d'||weat.weather[0].icon=='03n'||weat.weather[0].icon=='02n'||weat.weather[0].icon=='04d'||weat.weather[0].icon=='04n'){
       mainImage.textContent='cloud'
     }
