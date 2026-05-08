@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'poppins',sans-serif;
+    background: rgb(20, 4, 34);
+    color: white;
+    height: 100vh;
+}
+.header-box{
+    margin: 0 auto;
+    width: fit-content;
+    
+}
+.search{
+    width: 100%;
+    padding: 4px 8px ;
+    height: 44px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid gray;
+    outline: none;
+    background-color: aliceblue;
+    font-size: 1.6rem;
+    font-family: 'poppins',sans-serif;
+    
+}
+.search:focus{
+    border: 1px solid blue;
+}
+.li{
+    list-style: none;
+    background-color: rgb(79, 54, 102);
+    padding: 10px;
+    border-bottom: 1px solid black;
+    max-width:350px ;
+}
+.li:hover{
+    background-color: rgb(185, 130, 236);
+}
+.citybox{
+    margin-top: 20px;
+    text-align: center;
+    
+
+}
+#b-nav:hover{
+    color: blue;
+}
+.bottom-nav-container{
+     display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+padding: 20px;
+    gap: 60px;
+    bottom: 0px;
+    background-color: rgb(25, 18, 32);
+}
+@media (min-width:768px) and (max-width:1024px){
+    .search{
+        width: 350px;
+    }
+    body{
+        font-size: 1.7rem;
+    }
+    #b-nav{
+        font-size: 30px;
+    }
+    
+}
